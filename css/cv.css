@@ -1,0 +1,14 @@
+body {
+  background: white;
+  color: black;
+  font-family: Georgia, serif;
+  padding: 40px;
+}
+
+button {
+  margin-bottom: 20px;
+}
+
+@media print {
+  button { display: none; }
+}

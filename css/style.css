@@ -1,0 +1,42 @@
+body {
+  background: radial-gradient(circle at top, #0a0f2c, #05060f 70%);
+  color: #e6e6eb;
+  font-family: Inter, system-ui, sans-serif;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+}
+
+nav a {
+  color: #00ffd5;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+#hero {
+  text-align: center;
+}
+
+#hero img {
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid #00ffd5;
+}
+
+.cv-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  border: 1px solid #00ffd5;
+  border-radius: 30px;
+  color: #00ffd5;
+  text-decoration: none;
+}
