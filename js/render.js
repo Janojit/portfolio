@@ -2,11 +2,13 @@ const d = window.PORTFOLIO_DATA;
 
 /* ABOUT */
 document.getElementById("about").innerHTML = `
-<div class="about-card">
-  <h2>${d.about.name}</h2>
-  <h3>${d.about.role}</h3>
+<div class="about-hero">
+  <h1>${d.about.name}</h1>
+  <h2>${d.about.role}</h2>
   <p>${d.about.summary}</p>
-</div>`;
+</div>
+`;
+
 
 /* EXPERIENCE */
 document.getElementById("experience-container").innerHTML =
