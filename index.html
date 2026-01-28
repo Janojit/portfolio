@@ -18,17 +18,14 @@
 <nav>
   <h2>Janojit Chakraborty</h2>
 
-  <div class="dropdown">
-    <button class="dropbtn">☰ Contents</button>
-    <div class="dropdown-content">
-      <a onclick="scrollToPanel(0)">About</a>
-      <a onclick="scrollToPanel(1)">Experience</a>
-      <a onclick="scrollToPanel(2)">Education</a>
-      <a onclick="scrollToPanel(3)">Projects</a>
-      <a onclick="scrollToPanel(4)">Publication</a>
-      <a onclick="scrollToPanel(5)">Skills</a>
-      <a href="https://github.com/Janojit/portfolio2/raw/main/JANOJIT_CV.pdf" target="_blank">CV</a>
-    </div>
+  <div class="dropdown-content">
+    <a onclick="scrollToPanel('panel-about')">About</a>
+    <a onclick="scrollToPanel('panel-experience')">Experience</a>
+    <a onclick="scrollToPanel('panel-education')">Education</a>
+    <a onclick="scrollToPanel('panel-projects')">Projects</a>
+    <a onclick="scrollToPanel('panel-publication')">Publication</a>
+    <a onclick="scrollToPanel('panel-skills')">Skills</a>
+    <a href="https://github.com/Janojit/portfolio2/raw/main/JANOJIT_CV.pdf" target="_blank">CV</a>
   </div>
 </nav>
 
@@ -42,34 +39,36 @@
 <!-- HORIZONTAL CENTERED CONTENT -->
 <div id="horizontal-container">
 
-  <section id="about" class="panel"></section>
+  <section id="panel-about" class="panel">
+    <div id="about"></div>
+  </section>
 
-  <section class="panel">
+  <section id="panel-experience" class="panel">
     <h2>Experience</h2>
     <div id="experience-container"></div>
   </section>
 
-  <section class="panel">
+  <section id="panel-education" class="panel">
     <h2>Education</h2>
     <div id="education-container"></div>
   </section>
 
-  <section class="panel">
+  <section id="panel-projects" class="panel">
     <h2>Projects</h2>
     <div id="projects-container"></div>
   </section>
 
-  <section class="panel">
+  <section id="panel-publication" class="panel">
     <h2>Publication</h2>
     <div id="publication-container"></div>
   </section>
 
-  <section class="panel">
+  <section id="panel-skills" class="panel">
     <h2>Skills</h2>
     <div id="skills-container"></div>
   </section>
 
-  <section class="panel">
+  <section id="panel-cv" class="panel">
     <h2>Curriculum Vitae</h2>
     <a class="cv-btn"
        href="https://github.com/Janojit/portfolio2/raw/main/JANOJIT_CV.pdf"
