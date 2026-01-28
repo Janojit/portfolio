@@ -75,6 +75,22 @@ working on production-grade GenAI systems.
 
   projects: [
     {
+      title: "Speech Completion Prediction",
+      desc: `
+      Real-time system to estimate the semantic progress of a speech or lecture as a percentage.
+      • Developed a supervised BiGRU-based model using semantic information gain,
+      knowledge graphs, and GloVe embeddings.
+      • Designed an unsupervised approach using topic modeling with LLM-generated
+      reference content.
+      • Combined both approaches for improved robustness and accuracy.
+      • Deployed the system via an interactive MERN-based web interface.
+      Tools: PyTorch, GloVe, MERN Stack
+      (May – Jul 2025)
+      `,
+      link: "https://github.com/Team1-SpeechCompletion/Speech-Completion-Prediction"
+    },
+
+    {
       title: "Multimodal Hate Speech Detection (MMHS150K)",
       desc: "Text + Image multimodal deep learning with fusion strategies",
       link: "https://github.com/Janojit/Multi-modal-Hate-Speech-Detection-using-MMHS150K-Dataset"
@@ -98,6 +114,7 @@ working on production-grade GenAI systems.
 
   publication: {
     title: "The TCG CREST -- RKMVERI Submission for the NCIIPC Startup India AI Grand Challenge",
+    Abstract: "In this report, we summarize the integrated multilingual audio processing pipeline developed by our team for the inaugural NCIIPC Startup India AI GRAND CHALLENGE, addressing Problem Statement 06: Language-Agnostic Speaker Identification and Diarisation, and subsequent Transcription and Translation System. Our primary focus was on advancing speaker diarization, a critical component for multilingual and code-mixed scenarios. The main intent of this work was to study the realworld applicability of our in-house speaker diarization (SD) systems. To this end, we investigated a robust voice activity detection (VAD) technique and fine-tuned speaker embedding models for improved speaker identification in low-resource settings. We leveraged our own recently proposed multi-kernel consensus spectral clustering framework, which substantially improved the diarization performance across all recordings in the training corpus provided by the organizers. Complementary modules for speaker and language identification, automatic speech recognition (ASR), and neural machine translation were integrated in the pipeline. Post-processing refinements further improved system robustness.",
     link: "https://www.arxiv.org/pdf/2512.11009"
   },
 
