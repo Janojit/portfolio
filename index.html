@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,72 +12,71 @@
 
 <body>
 
+<!-- THEME TOGGLE -->
+<button id="theme-toggle">☀️</button>
+
 <nav>
   <h2>JC</h2>
   <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li>
-      <a href="https://github.com/Janojit/portfolio2/raw/main/JANOJIT_CV.pdf"
-         target="_blank">CV</a>
-    </li>
+    <li><a onclick="scrollToPanel(0)">About</a></li>
+    <li><a onclick="scrollToPanel(1)">Experience</a></li>
+    <li><a onclick="scrollToPanel(2)">Education</a></li>
+    <li><a onclick="scrollToPanel(3)">Projects</a></li>
+    <li><a onclick="scrollToPanel(4)">Publication</a></li>
+    <li><a onclick="scrollToPanel(5)">Skills</a></li>
+    <li><a onclick="scrollToPanel(6)">CV</a></li>
   </ul>
 </nav>
 
-<section id="hero" class="reveal">
+<section id="hero">
   <img src="assets/profile.png">
   <h1>Hi, I'm <span>Janojit Chakraborty</span></h1>
   <h2 id="typing"></h2>
   <p>AI / ML Engineer · RAG · Voice AI · Research</p>
-
-  <a class="cv-btn"
-     href="https://github.com/Janojit/portfolio2/raw/main/JANOJIT_CV.pdf"
-     target="_blank">
-     Download CV
-  </a>
 </section>
 
-<section id="about" class="reveal"></section>
+<!-- HORIZONTAL CONTENT -->
+<div id="horizontal-container">
 
-<section id="experience" class="reveal">
-  <h2>Experience</h2>
-  <div id="experience-container"></div>
-</section>
+  <section id="about" class="panel"></section>
 
-<section id="education" class="reveal">
-  <h2>Education</h2>
-  <div id="education-container"></div>
-</section>
+  <section class="panel">
+    <h2>Experience</h2>
+    <div id="experience-container"></div>
+  </section>
 
-<section id="projects" class="reveal">
-  <h2>Projects</h2>
-  <div id="projects-container"></div>
-</section>
+  <section class="panel">
+    <h2>Education</h2>
+    <div id="education-container"></div>
+  </section>
 
-<section id="publication" class="reveal">
-  <h2>Publication</h2>
-  <div id="publication-container"></div>
-</section>
+  <section class="panel">
+    <h2>Projects</h2>
+    <div id="projects-container"></div>
+  </section>
 
-<section id="skills" class="reveal">
-  <h2>Skills</h2>
-  <div id="skills-container"></div>
-</section>
+  <section class="panel">
+    <h2>Publication</h2>
+    <div id="publication-container"></div>
+  </section>
 
-<section id="awards" class="reveal">
-  <h2>Honors & Awards</h2>
-  <div id="awards-container"></div>
-</section>
+  <section class="panel">
+    <h2>Skills</h2>
+    <div id="skills-container"></div>
+  </section>
 
-<section id="languages" class="reveal">
-  <h2>Languages</h2>
-  <div id="languages-container"></div>
-</section>
+  <section class="panel">
+    <h2>Curriculum Vitae</h2>
+    <a class="cv-btn"
+       href="https://github.com/Janojit/portfolio2/raw/main/JANOJIT_CV.pdf"
+       target="_blank">
+       Download CV
+    </a>
+  </section>
 
-<!-- MODAL (used for projects + publication) -->
+</div>
+
+<!-- MODAL (projects + publication) -->
 <div id="project-modal" onclick="closeModal()">
   <div id="project-modal-content" onclick="event.stopPropagation()">
     <span class="close-btn" onclick="closeModal()">×</span>
@@ -94,8 +93,8 @@
 <script src="js/data.js"></script>
 <script src="js/render.js"></script>
 <script src="js/typing.js"></script>
-<script src="js/scroll.js"></script>
 <script src="js/chatbot.js"></script>
+<script src="js/theme.js"></script>
 
 </body>
 </html>
