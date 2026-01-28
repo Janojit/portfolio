@@ -39,9 +39,17 @@ document.getElementById("publication-container").innerHTML = `
 document.getElementById("skills-container").innerHTML =
 d.skills.map(s=>`<span class="skill-tag">${s}</span>`).join("");
 
-window.scrollToPanel = i =>
-document.querySelectorAll(".panel")[i]
-  .scrollIntoView({behavior:"smooth",inline:"center"});
+window.scrollToPanel = function(id){
+  const el = document.getElementById(id);
+  if(el){
+    el.scrollIntoView({
+      behavior: "smooth",
+      inline: "center",
+      block: "nearest"
+    });
+  }
+};
+
 
 window.openProject = i => {
   const p = d.projects[i];
