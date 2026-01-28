@@ -35,13 +35,17 @@ d.projects.map((p,i) => `
   <span class="project-link">Click to view</span>
 </div>`).join("");
 
+/* PUBLICATION */
+document.getElementById("publication-container").innerHTML = `
+<div class="card project-card" onclick="openPublication()">
+  <h3>${d.publication.title}</h3>
+  <p>${d.publication.venue}</p>
+  <span class="project-link">Click to view</span>
+</div>`;
+
 /* SKILLS */
 document.getElementById("skills-container").innerHTML =
 d.skills.map(s => `<span class="skill-tag">${s}</span>`).join("");
-
-/* PUBLICATION */
-document.getElementById("publication-container").innerHTML =
-`<a href="${d.publication.link}" target="_blank">${d.publication.title}</a>`;
 
 /* AWARDS */
 document.getElementById("awards-container").innerHTML =
@@ -51,17 +55,28 @@ d.awards.map(a => `<div class="card">${a}</div>`).join("");
 document.getElementById("languages-container").innerHTML =
 d.languages.map(l => `<div class="card">${l}</div>`).join("");
 
-/* PROJECT MODAL */
+/* MODALS */
 window.openProject = function(i){
   const p = d.projects[i];
   document.getElementById("project-modal-body").innerHTML = `
     <h2>${p.title}</h2>
-    <p>${p.desc}</p>
+    <p>${p.desc.replace(/\n/g,"<br>")}</p>
     <a href="${p.link}" target="_blank">View GitHub ↗</a>
   `;
   document.getElementById("project-modal").style.display = "flex";
 };
 
-window.closeProject = function(){
+window.openPublication = function(){
+  const p = d.publication;
+  document.getElementById("project-modal-body").innerHTML = `
+    <h2>${p.title}</h2>
+    <p><b>${p.venue}</b></p>
+    <p>${p.desc.replace(/\n/g,"<br>")}</p>
+    <a href="${p.link}" target="_blank">Read on arXiv ↗</a>
+  `;
+  document.getElementById("project-modal").style.display = "flex";
+};
+
+window.closeModal = function(){
   document.getElementById("project-modal").style.display = "none";
 };
