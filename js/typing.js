@@ -1,4 +1,4 @@
-const texts = ["AI Engineer", "ML Researcher", "RAG Specialist"];
+const texts = ["AI Engineer","ML Researcher","RAG Specialist"];
 let i=0,j=0;
 const el=document.getElementById("typing");
 
