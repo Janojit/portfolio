@@ -178,3 +178,9 @@ nav {
   color: white;
   border: none;
 }
+
+.about-hero h2 {
+  text-align: center;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
