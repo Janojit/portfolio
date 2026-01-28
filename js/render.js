@@ -26,7 +26,8 @@ d.education.map(e=>`
 document.getElementById("projects-container").innerHTML =
 d.projects.map((p,i)=>`
 <div class="card project-card" onclick="openProject(${i})">
-<h3>${p.title}</h3><p>${p.desc}</p>
+<h3>${p.title}</h3>
+<p>${p.desc}</p>
 </div>`).join("");
 
 document.getElementById("publication-container").innerHTML = `
@@ -40,24 +41,24 @@ d.skills.map(s=>`<span class="skill-tag">${s}</span>`).join("");
 
 window.scrollToPanel = i =>
 document.querySelectorAll(".panel")[i]
-  .scrollIntoView({behavior:"smooth",inline:"start"});
+  .scrollIntoView({behavior:"smooth",inline:"center"});
 
 window.openProject = i => {
   const p = d.projects[i];
-  projectModal(p.title, p.desc, p.link, "GitHub");
+  modal(p.title, p.desc, p.link, "GitHub");
 };
 
 window.openPublication = () => {
   const p = d.publication;
-  projectModal(p.title, p.desc, p.link, "arXiv");
+  modal(p.title, p.desc, p.link, "arXiv");
 };
 
-function projectModal(title, desc, link, label){
-  document.getElementById("project-modal-body").innerHTML =
+function modal(title, desc, link, label){
+  projectModalBody.innerHTML =
   `<h2>${title}</h2><p>${desc.replace(/\n/g,"<br>")}</p>
    <a href="${link}" target="_blank">${label} ↗</a>`;
-  document.getElementById("project-modal").style.display="flex";
+  projectModal.style.display="flex";
 }
 
 window.closeModal = () =>
-document.getElementById("project-modal").style.display="none";
+projectModal.style.display="none";
