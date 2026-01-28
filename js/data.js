@@ -3,11 +3,11 @@ window.PORTFOLIO_DATA = {
     name: "Janojit Chakraborty",
     role: "AI / ML Engineer & Researcher",
     summary: `
-AI/ML Engineer with strong research and applied experience in
-Retrieval-Augmented Generation (RAG), multimodal learning,
-speech processing, and large-scale data analytics.
-Currently pursuing MSc in Big Data Analytics at RKMVERI and
-working on production-grade GenAI systems.
+    AI/ML Engineer with strong research and applied experience in
+    Retrieval-Augmented Generation (RAG), multimodal learning,
+    speech processing, and large-scale data analytics.
+    Currently pursuing MSc in Big Data Analytics at RKMVERI and
+    working on production-grade GenAI systems.
 `
   },
 
@@ -94,16 +94,6 @@ working on production-grade GenAI systems.
       title: "Multimodal Hate Speech Detection (MMHS150K)",
       desc: "Text + Image multimodal deep learning with fusion strategies",
       link: "https://github.com/Janojit/Multi-modal-Hate-Speech-Detection-using-MMHS150K-Dataset"
-    },
-    {
-      title: "Spotify Track Popularity Prediction",
-      desc: "Regression and ensemble models (Voting Regressor best)",
-      link: "https://github.com/Janojit/Predicting-Spotify-Track-Popularity-Using-Machine-Learning-Models"
-    },
-    {
-      title: "Chess Quest",
-      desc: "Pygame-based chess + Cows & Bulls game",
-      link: "https://github.com/Janojit/Chess-Quest-The-Cows-and-Bulls-Challenge"
     }
   ],
 
@@ -113,9 +103,21 @@ working on production-grade GenAI systems.
   ],
 
   publication: {
-    title: "The TCG CREST -- RKMVERI Submission for the NCIIPC Startup India AI Grand Challenge",
-    Abstract: "In this report, we summarize the integrated multilingual audio processing pipeline developed by our team for the inaugural NCIIPC Startup India AI GRAND CHALLENGE, addressing Problem Statement 06: Language-Agnostic Speaker Identification and Diarisation, and subsequent Transcription and Translation System. Our primary focus was on advancing speaker diarization, a critical component for multilingual and code-mixed scenarios. The main intent of this work was to study the realworld applicability of our in-house speaker diarization (SD) systems. To this end, we investigated a robust voice activity detection (VAD) technique and fine-tuned speaker embedding models for improved speaker identification in low-resource settings. We leveraged our own recently proposed multi-kernel consensus spectral clustering framework, which substantially improved the diarization performance across all recordings in the training corpus provided by the organizers. Complementary modules for speaker and language identification, automatic speech recognition (ASR), and neural machine translation were integrated in the pipeline. Post-processing refinements further improved system robustness.",
-    link: "https://www.arxiv.org/pdf/2512.11009"
+  title: "The TCG CREST — RKMVERI Submission for the NCIIPC Startup India AI Grand Challenge",
+  venue: "arXiv · Dec 2025",
+  desc: `
+  We developed an integrated multilingual audio processing pipeline for
+  Language-Agnostic Speaker Identification, Diarisation, Transcription,
+  and Translation.
+  
+  Key contributions:
+  • Robust Voice Activity Detection (VAD)
+  • Fine-tuned speaker embedding models for low-resource settings
+  • Proposed a multi-kernel consensus spectral clustering framework
+  • Integrated Speaker ID, Language ID, ASR, and NMT modules
+  • Post-processing refinements for real-world robustness
+  `,
+  link: "https://www.arxiv.org/pdf/2512.11009"
   },
 
   awards: [
