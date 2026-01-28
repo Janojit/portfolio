@@ -43,3 +43,40 @@ section {
   border-radius: 20px;
   background: rgba(0,255,213,0.15);
 }
+
+
+.about-hero {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px;
+  background: linear-gradient(
+    135deg,
+    rgba(0,255,213,0.18),
+    rgba(124,124,255,0.12)
+  );
+  border-radius: 28px;
+  border: 1px solid rgba(0,255,213,0.45);
+  box-shadow:
+    0 0 40px rgba(0,255,213,0.35),
+    inset 0 0 30px rgba(124,124,255,0.15);
+}
+
+.about-hero h1 {
+  font-size: 3.2rem;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg,#00ffd5,#7c7cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-hero h2 {
+  font-weight: 500;
+  color: #b8c1ff;
+  margin-bottom: 25px;
+}
+
+.about-hero p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #e6e6eb;
+}
