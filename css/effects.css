@@ -1,39 +1,33 @@
-.card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(0,255,213,0.3);
-  border-radius: 16px;
-  padding: 24px;
-  margin: 20px 0;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 0 25px rgba(0,255,213,0.35);
-}
-
 .reveal {
   opacity: 0;
   transform: translateY(40px);
   transition: 0.8s;
 }
-
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
 }
 
-.circle-container {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+.project-card { cursor:pointer; }
+
+#project-modal {
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.75);
+  z-index:9999;
+  align-items:center;
+  justify-content:center;
 }
 
-.circle {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#project-modal-content {
+  background:#05060f;
+  padding:40px;
+  border-radius:20px;
+  border:1px solid #00ffd5;
+}
+
+.close-btn {
+  font-size:2rem;
+  cursor:pointer;
 }
