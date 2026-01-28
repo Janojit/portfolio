@@ -2,8 +2,9 @@ const d = window.PORTFOLIO_DATA;
 
 document.getElementById("about").innerHTML = `
 <div class="about-hero">
+  <h2>About</h2>
   <h1>${d.about.name}</h1>
-  <h2>${d.about.role}</h2>
+  <h3>${d.about.role}</h3>
   <p>${d.about.summary}</p>
 </div>`;
 
