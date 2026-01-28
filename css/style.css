@@ -46,15 +46,25 @@ nav a {
 
 #horizontal-container {
   display: flex;
-  gap: 80px;
+  gap: 120px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  padding: 80px 10%;
+  padding: 100px 0;
+  justify-content: center;
 }
 
 .panel {
-  min-width: 85vw;
-  scroll-snap-align: start;
+  min-width: 80vw;
+  max-width: 900px;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.panel h2 {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .card {
@@ -126,4 +136,8 @@ nav a {
   outline: none;
   background: black;
   color: white;
+}
+
+.panel > div {
+  width: 100%;
 }
