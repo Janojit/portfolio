@@ -16,7 +16,6 @@ working on production-grade GenAI systems.
       role: "AI/ML Intern",
       org: "Rezolve AI",
       period: "Jan 2026 – Present",
-      location: "Kolkata, India",
       bullets: [
         "Designed production-grade RAG pipelines for GenAI voice assistants",
         "Optimized semantic retrieval and prompt orchestration",
@@ -89,11 +88,6 @@ working on production-grade GenAI systems.
       title: "Chess Quest",
       desc: "Pygame-based chess + Cows & Bulls game",
       link: "https://github.com/Janojit/Chess-Quest-The-Cows-and-Bulls-Challenge"
-    },
-    {
-      title: "Library Catalog Management System",
-      desc: "Streamlit + MongoDB CRUD application",
-      link: "https://github.com/Janojit/library-catalog-system"
     }
   ],
 
@@ -103,7 +97,7 @@ working on production-grade GenAI systems.
   ],
 
   publication: {
-    title: "Multilingual Speaker Diarization – NCIIPC AI Grand Challenge",
+    title: "The TCG CREST -- RKMVERI Submission for the NCIIPC Startup India AI Grand Challenge",
     link: "https://www.arxiv.org/pdf/2512.11009"
   },
 
