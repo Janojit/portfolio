@@ -1,5 +1,5 @@
 const knowledge=[
-["rag","I build production-grade RAG systems for GenAI."],
+["rag","I build production-grade RAG systems for GenAI applications."],
 ["research","My research focuses on multimodal learning and speech AI."],
 ["publication","I am a co-author of an arXiv paper on speaker diarization."]
 ];
