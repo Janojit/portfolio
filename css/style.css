@@ -21,22 +21,25 @@ section {
   padding: 80px 10%;
 }
 
-#hero {
-  text-align: center;
+.about-card {
+  background: linear-gradient(135deg, rgba(0,255,213,0.2), rgba(124,124,255,0.15));
+  border: 1px solid rgba(0,255,213,0.5);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 0 35px rgba(0,255,213,0.35);
 }
 
-#hero img {
-  width: 150px;
-  border-radius: 50%;
-  border: 3px solid #00ffd5;
+.card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 14px;
+  padding: 24px;
+  margin: 20px 0;
 }
 
-.cv-btn {
+.skill-tag {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  border: 1px solid #00ffd5;
-  border-radius: 30px;
-  color: #00ffd5;
-  text-decoration: none;
+  margin: 8px;
+  padding: 10px 18px;
+  border-radius: 20px;
+  background: rgba(0,255,213,0.15);
 }
