@@ -16,16 +16,20 @@
 <button id="theme-toggle">☀️</button>
 
 <nav>
-  <h2>JC</h2>
-  <ul>
-    <li><a onclick="scrollToPanel(0)">About</a></li>
-    <li><a onclick="scrollToPanel(1)">Experience</a></li>
-    <li><a onclick="scrollToPanel(2)">Education</a></li>
-    <li><a onclick="scrollToPanel(3)">Projects</a></li>
-    <li><a onclick="scrollToPanel(4)">Publication</a></li>
-    <li><a onclick="scrollToPanel(5)">Skills</a></li>
-    <li><a onclick="scrollToPanel(6)">CV</a></li>
-  </ul>
+  <h2>Janojit Chakraborty</h2>
+
+  <div class="dropdown">
+    <button class="dropbtn">☰ Contents</button>
+    <div class="dropdown-content">
+      <a onclick="scrollToPanel(0)">About</a>
+      <a onclick="scrollToPanel(1)">Experience</a>
+      <a onclick="scrollToPanel(2)">Education</a>
+      <a onclick="scrollToPanel(3)">Projects</a>
+      <a onclick="scrollToPanel(4)">Publication</a>
+      <a onclick="scrollToPanel(5)">Skills</a>
+      <a href="https://github.com/Janojit/portfolio2/raw/main/JANOJIT_CV.pdf" target="_blank">CV</a>
+    </div>
+  </div>
 </nav>
 
 <section id="hero">
@@ -35,7 +39,7 @@
   <p>AI / ML Engineer · RAG · Voice AI · Research</p>
 </section>
 
-<!-- HORIZONTAL CONTENT -->
+<!-- HORIZONTAL CENTERED CONTENT -->
 <div id="horizontal-container">
 
   <section id="about" class="panel"></section>
@@ -76,7 +80,7 @@
 
 </div>
 
-<!-- MODAL (projects + publication) -->
+<!-- MODAL -->
 <div id="project-modal" onclick="closeModal()">
   <div id="project-modal-content" onclick="event.stopPropagation()">
     <span class="close-btn" onclick="closeModal()">×</span>
