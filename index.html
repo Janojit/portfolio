@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Janojit Chakraborty | AI Engineer</title>
 
 <link rel="stylesheet" href="css/style.css">
@@ -17,6 +17,7 @@
   <ul>
     <li><a href="#about">About</a></li>
     <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="cv.html" target="_blank">CV</a></li>
@@ -31,72 +32,41 @@
   <a class="cv-btn" href="cv.html" target="_blank">Download CV</a>
 </section>
 
-<section id="about" class="reveal">
-<h2>About</h2>
-<p>
-AI/ML Engineer and researcher with experience in RAG systems, multimodal learning,
-speech processing, and applied deep learning. MSc Big Data Analytics @ RKMVERI.
-</p>
-</section>
+<section id="about" class="reveal"></section>
 
 <section id="experience" class="reveal">
-<h2>Experience</h2>
+  <h2>Experience</h2>
+  <div id="experience-container"></div>
+</section>
 
-<div class="card">
-<h3>AI/ML Intern — Rezolve AI</h3>
-<p>Jan 2026 – Present</p>
-<ul>
-<li>Designed production-grade RAG pipelines for GenAI voice assistants</li>
-<li>Optimized semantic retrieval and prompt orchestration</li>
-<li>Integrated LLM inference with speech pipelines</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>IASc-INSA-NASI Summer Research Fellow — IIT Ropar</h3>
-<p>May 2025 – Jul 2025</p>
-<ul>
-<li>Selected for nationally competitive SRFP-2025 program</li>
-<li>Conducted independent research under Dr. Sudarshan Iyengar</li>
-</ul>
-</div>
-
+<section id="education" class="reveal">
+  <h2>Education</h2>
+  <div id="education-container"></div>
 </section>
 
 <section id="projects" class="reveal">
-<h2>Projects</h2>
-
-<div class="card">Multimodal Hate Speech Detection (MMHS150K)</div>
-<div class="card">Speech Completion Prediction using Embeddings</div>
-<div class="card">Chess Quest: Cows and Bulls Challenge</div>
-
+  <h2>Projects</h2>
+  <div id="projects-container"></div>
 </section>
 
 <section id="skills" class="reveal">
-<h2>Skills</h2>
-
-<div class="circle-container">
-  <div class="circle" data-percent="90">Python</div>
-  <div class="circle" data-percent="85">ML</div>
-  <div class="circle" data-percent="80">DL</div>
-  <div class="circle" data-percent="75">RAG</div>
-</div>
-
-<canvas id="radarChart"></canvas>
-
-<div class="cloud">
-  <span>Python</span><span>PyTorch</span><span>NLP</span>
-  <span>Computer Vision</span><span>MongoDB</span><span>Hadoop</span>
-</div>
+  <h2>Skills</h2>
+  <div id="skills-container"></div>
 </section>
 
-<section id="activity" class="reveal">
-<h2>Live Stats</h2>
-<div class="stats">
-  <div><span data-count="20">0</span><p>Projects</p></div>
-  <div><span data-count="1">0</span><p>Publications</p></div>
-  <div><span data-count="5000">0</span><p>LOC</p></div>
-</div>
+<section id="publication" class="reveal">
+  <h2>Publication</h2>
+  <div id="publication-container"></div>
+</section>
+
+<section id="awards" class="reveal">
+  <h2>Honors & Awards</h2>
+  <div id="awards-container"></div>
+</section>
+
+<section id="languages" class="reveal">
+  <h2>Languages</h2>
+  <div id="languages-container"></div>
 </section>
 
 <div id="chatbot">
@@ -105,11 +75,9 @@ speech processing, and applied deep learning. MSc Big Data Analytics @ RKMVERI.
 </div>
 
 <script src="js/data.js"></script>
+<script src="js/render.js"></script>
 <script src="js/typing.js"></script>
 <script src="js/scroll.js"></script>
-<script src="js/skills.js"></script>
-<script src="js/radar.js"></script>
-<script src="js/counters.js"></script>
 <script src="js/chatbot.js"></script>
 
 </body>
