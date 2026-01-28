@@ -57,14 +57,14 @@
   <div id="projects-container"></div>
 </section>
 
-<section id="skills" class="reveal">
-  <h2>Skills</h2>
-  <div id="skills-container"></div>
-</section>
-
 <section id="publication" class="reveal">
   <h2>Publication</h2>
   <div id="publication-container"></div>
+</section>
+
+<section id="skills" class="reveal">
+  <h2>Skills</h2>
+  <div id="skills-container"></div>
 </section>
 
 <section id="awards" class="reveal">
@@ -77,10 +77,10 @@
   <div id="languages-container"></div>
 </section>
 
-<!-- PROJECT MODAL -->
-<div id="project-modal" onclick="closeProject()">
+<!-- MODAL (used for projects + publication) -->
+<div id="project-modal" onclick="closeModal()">
   <div id="project-modal-content" onclick="event.stopPropagation()">
-    <span class="close-btn" onclick="closeProject()">×</span>
+    <span class="close-btn" onclick="closeModal()">×</span>
     <div id="project-modal-body"></div>
   </div>
 </div>
