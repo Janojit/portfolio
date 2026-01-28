@@ -1,7 +1,7 @@
 body {
   background: radial-gradient(circle at top, #0a0f2c, #05060f 70%);
   color: #e6e6eb;
-  font-family: Inter, system-ui, sans-serif;
+  font-family: system-ui, sans-serif;
   margin: 0;
 }
 
@@ -21,41 +21,25 @@ section {
   padding: 80px 10%;
 }
 
-#hero {
-  text-align: center;
-}
+#hero { text-align: center; }
 
 #hero img {
   width: 160px;
   border-radius: 50%;
   border: 3px solid #00ffd5;
-  box-shadow:
-    0 0 25px rgba(0,255,213,0.6),
-    0 0 60px rgba(124,124,255,0.4);
+  box-shadow: 0 0 30px rgba(0,255,213,.6);
 }
 
 .about-hero {
   max-width: 900px;
   margin: auto;
   padding: 60px;
-  background: linear-gradient(
-    135deg,
-    rgba(0,255,213,0.18),
-    rgba(124,124,255,0.12)
-  );
   border-radius: 28px;
-  border: 1px solid rgba(0,255,213,0.45);
-}
-
-.about-hero h1 {
-  font-size: 3.2rem;
-  background: linear-gradient(90deg,#00ffd5,#7c7cff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(135deg, rgba(0,255,213,.18), rgba(124,124,255,.12));
 }
 
 .card {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255,255,255,.05);
   border-radius: 14px;
   padding: 24px;
   margin: 20px 0;
@@ -63,28 +47,29 @@ section {
 
 .skill-tag {
   display: inline-block;
-  margin: 8px;
+  margin: 6px;
   padding: 10px 18px;
   border-radius: 20px;
-  background: rgba(0,255,213,0.15);
+  background: rgba(0,255,213,.15);
 }
 
 .cv-btn {
-  display:inline-block;
-  margin-top:20px;
-  padding:12px 24px;
-  border:1px solid #00ffd5;
-  border-radius:30px;
-  color:#00ffd5;
-  text-decoration:none;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  border: 1px solid #00ffd5;
+  border-radius: 30px;
+  color: #00ffd5;
+  text-decoration: none;
 }
 
+/* CHATBOT */
 #chatbot {
   position: fixed;
   bottom: 20px;
   right: 20px;
   width: 320px;
-  background: rgba(5,6,15,0.95);
+  background: #05060f;
   border: 1px solid #00ffd5;
   border-radius: 16px;
   z-index: 10000;
@@ -102,5 +87,4 @@ section {
   background: black;
   color: white;
   border: none;
-  outline: none;
 }
