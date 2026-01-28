@@ -8,7 +8,6 @@ function type(){
     setTimeout(type,100);
   } else setTimeout(erase,1500);
 }
-
 function erase(){
   if(j>0){
     el.textContent=texts[i].slice(0,--j);
