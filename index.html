@@ -20,7 +20,10 @@
     <li><a href="#education">Education</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#skills">Skills</a></li>
-    <li><a href="cv.html" target="_blank">CV</a></li>
+    <li>
+      <a href="https://github.com/Janojit/portfolio2/raw/main/JANOJIT_CV.pdf"
+         target="_blank">CV</a>
+    </li>
   </ul>
 </nav>
 
@@ -29,7 +32,12 @@
   <h1>Hi, I'm <span>Janojit Chakraborty</span></h1>
   <h2 id="typing"></h2>
   <p>AI / ML Engineer · RAG · Voice AI · Research</p>
-  <a class="cv-btn" href="cv.html" target="_blank">Download CV</a>
+
+  <a class="cv-btn"
+     href="https://github.com/Janojit/portfolio2/raw/main/JANOJIT_CV.pdf"
+     target="_blank">
+     Download CV
+  </a>
 </section>
 
 <section id="about" class="reveal"></section>
@@ -69,6 +77,15 @@
   <div id="languages-container"></div>
 </section>
 
+<!-- PROJECT MODAL -->
+<div id="project-modal" onclick="closeProject()">
+  <div id="project-modal-content" onclick="event.stopPropagation()">
+    <span class="close-btn" onclick="closeProject()">×</span>
+    <div id="project-modal-body"></div>
+  </div>
+</div>
+
+<!-- CHATBOT -->
 <div id="chatbot">
   <div id="chatlog"></div>
   <input id="chatinput" placeholder="Ask about my work..." />
